@@ -1,13 +1,17 @@
 .card {
-  width: 280px;
+  width: min(280px, 100%);
   min-height: 480px;
+
   padding: 20px;
+
   border-radius: 16px;
+
   background-color: #fff;
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
   text-align: center;
 
-  /* 中身を縦方向に整える */
   display: flex;
   flex-direction: column;
 
