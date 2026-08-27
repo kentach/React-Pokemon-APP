@@ -8,7 +8,6 @@ body {
   background-color: #dae9f9;
 }
 
-
 /* ====================
    Loading
 ==================== */
@@ -52,7 +51,6 @@ body {
   }
 }
 
-
 /* ====================
    ポケモンカード
 ==================== */
@@ -73,7 +71,6 @@ body {
   margin: 0 auto;
   padding: 40px 20px;
 }
-
 
 /* ====================
    ボタン
@@ -117,7 +114,6 @@ body {
   transform: translateY(0);
 }
 
-
 /* ====================
    タブレット
 ==================== */
@@ -127,7 +123,6 @@ body {
     grid-template-columns: repeat(3, 280px);
   }
 }
-
 
 /* ====================
    タブレット・小さいPC
@@ -141,50 +136,63 @@ body {
   }
 }
 
-
 /* ====================
    スマホ
 ==================== */
-
 @media (max-width: 600px) {
   .pokemonCardContainer {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    width: 100%;
+    max-width: 1280px;
 
-    gap: 12px;
-    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: center;
+
+    gap: 24px;
+
+    margin: 0 auto;
+    padding: 40px 20px;
   }
 
   .card {
-    width: min(280px, 100%);
+    width: 100%;
     min-height: auto;
-    padding: 12px;
+    padding: 8px;
+    border-radius: 10px;
   }
 
   .cardImg {
-    height: 130px;
+    height: 80px;
   }
 
   .cardImg img {
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 
   .cardName {
-    margin: 10px 0 8px;
-    font-size: 20px;
+    margin: 8px 0;
+    font-size: 18px;
   }
 
   .cardTypes {
     margin-bottom: 10px;
   }
 
+  .typeName {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
   .cardInfo {
-    gap: 5px;
-    padding-top: 10px;
+    gap: 4px;
+    padding-top: 8px;
+  }
+
+  .cardData .title {
+    font-size: 11px;
   }
 }
-
 
 /* ====================
    かなり小さいスマホ
