@@ -138,51 +138,66 @@ body {
 ==================== */
 @media (max-width: 600px) {
   .pokemonCardContainer {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    padding: 20px 8px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px 10px;
   }
 
   .card {
     width: 100%;
-    min-height: auto;
-    padding: 8px;
+    min-height: 300px;
+    padding: 10px;
     border-radius: 10px;
   }
 
   .cardImg {
-    height: 80px;
+    height: 100px;
   }
 
   .cardImg img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
   }
 
   .cardName {
-    margin: 8px 0;
-    font-size: 18px;
+    margin: 10px 0 8px;
+    font-size: 16px;
   }
 
   .cardTypes {
     margin-bottom: 10px;
   }
 
-  .typeName {
-    padding: 4px 8px;
+  .cardTypes > div:first-child {
+    margin-bottom: 5px;
     font-size: 11px;
+  }
+
+  .typeName {
+    padding: 4px 7px;
+    font-size: 9px;
   }
 
   .cardInfo {
-    gap: 4px;
-    padding-top: 8px;
+    gap: 5px;
+    padding-top: 10px;
   }
 
   .cardData .title {
-    font-size: 11px;
+    font-size: 10px;
+  }
+
+  .btn {
+    gap: 10px;
+    margin: 20px 0 30px;
+  }
+
+  .btn button {
+    width: 100px;
+    padding: 8px 10px;
+    font-size: 13px;
   }
 }
-
 /* ====================
    かなり小さいスマホ
 ==================== */
