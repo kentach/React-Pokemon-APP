@@ -149,23 +149,39 @@ body {
 @media (max-width: 600px) {
   .pokemonCardContainer {
     grid-template-columns: 1fr;
-
     justify-items: center;
 
-    gap: 20px;
-
-    padding: 25px 15px;
-  }
-
-  .btn {
     gap: 12px;
-    margin: 25px 0 35px;
+    padding: 15px 10px;
   }
 
-  .btn button {
-    width: 110px;
-    padding: 10px 15px;
-    font-size: 14px;
+  .card {
+    width: min(280px, 100%);
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .cardImg {
+    height: 130px;
+  }
+
+  .cardImg img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cardName {
+    margin: 10px 0 8px;
+    font-size: 20px;
+  }
+
+  .cardTypes {
+    margin-bottom: 10px;
+  }
+
+  .cardInfo {
+    gap: 5px;
+    padding-top: 10px;
   }
 }
 
