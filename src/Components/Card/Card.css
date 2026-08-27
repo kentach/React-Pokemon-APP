@@ -116,49 +116,48 @@
 
 
 @media (max-width: 600px) {
-
   .card {
     width: 100%;
-    min-height: 300px;
-    padding: 10px;
-    border-radius: 10px;
+    min-height: 380px;
+    padding: 12px;
+    border-radius: 12px;
   }
 
   .cardImg {
-    height: 100px;
-    border-radius: 8px;
+    height: 140px;
+    border-radius: 10px;
   }
 
   .cardImg img {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
   }
 
   .cardName {
-    margin: 8px 0;
-    font-size: 14px;
+    margin: 10px 0;
+    font-size: 18px;
   }
 
   .cardTypes {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .cardTypes > div:first-child {
-    margin-bottom: 5px;
-    font-size: 9px;
+    margin-bottom: 6px;
+    font-size: 11px;
   }
 
   .typeName {
-    padding: 3px 5px;
-    font-size: 8px;
+    padding: 4px 8px;
+    font-size: 10px;
   }
 
   .cardInfo {
-    gap: 4px;
-    padding-top: 8px;
+    gap: 5px;
+    padding-top: 10px;
   }
 
   .cardData .title {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
