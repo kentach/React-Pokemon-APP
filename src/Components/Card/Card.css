@@ -5,7 +5,6 @@
   padding: 20px;
 
   border-radius: 16px;
-
   background-color: #fff;
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
@@ -117,9 +116,27 @@
 
 
 @media (max-width: 600px) {
+
+  .card {
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .cardImg {
+    height: 100px;
+    border-radius: 8px;
+  }
+
+  .cardImg img {
+    width: 90px;
+    height: 90px;
+  }
+
   .cardName {
     margin: 8px 0;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .cardTypes {
