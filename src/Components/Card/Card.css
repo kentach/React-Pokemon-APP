@@ -115,3 +115,33 @@
   color: #555;
 }
 
+
+@media (max-width: 600px) {
+  .cardName {
+    margin: 8px 0;
+    font-size: 12px;
+  }
+
+  .cardTypes {
+    margin-bottom: 8px;
+  }
+
+  .cardTypes > div:first-child {
+    margin-bottom: 5px;
+    font-size: 9px;
+  }
+
+  .typeName {
+    padding: 3px 5px;
+    font-size: 8px;
+  }
+
+  .cardInfo {
+    gap: 4px;
+    padding-top: 8px;
+  }
+
+  .cardData .title {
+    font-size: 8px;
+  }
+}
