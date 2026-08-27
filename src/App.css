@@ -62,7 +62,10 @@ body {
   max-width: 1280px;
 
   display: grid;
+
+  /* PC */
   grid-template-columns: repeat(4, 280px);
+
   justify-content: center;
 
   gap: 24px;
@@ -133,6 +136,7 @@ body {
 @media (max-width: 900px) {
   .pokemonCardContainer {
     grid-template-columns: repeat(2, 280px);
+
     gap: 20px;
   }
 }
@@ -144,21 +148,53 @@ body {
 
 @media (max-width: 600px) {
   .pokemonCardContainer {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
 
-    gap: 20px;
+    width: 100%;
 
-    padding: 25px 15px;
+    gap: 16px;
+
+    padding: 20px 12px;
   }
 
   .btn {
-    gap: 12px;
-    margin: 25px 0 35px;
+    gap: 10px;
+
+    margin: 20px 0 30px;
+
+    padding: 0 12px;
   }
 
   .btn button {
-    width: 110px;
-    padding: 10px 15px;
+    width: 100%;
+
+    max-width: 140px;
+
+    padding: 10px 12px;
+
     font-size: 14px;
+  }
+}
+
+
+/* ====================
+   かなり小さいスマホ
+==================== */
+
+@media (max-width: 375px) {
+  .pokemonCardContainer {
+    padding: 15px 8px;
+  }
+
+  .btn {
+    gap: 8px;
+  }
+
+  .btn button {
+    max-width: 130px;
+
+    padding: 9px 10px;
+
+    font-size: 13px;
   }
 }
