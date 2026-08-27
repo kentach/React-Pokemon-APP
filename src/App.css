@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #dae9f9;
+}
+
+
+/* ====================
+   Loading
+==================== */
+
+.loading {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+
+  border: 5px solid #eee;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+.loading p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ====================
+   ポケモンカード
+==================== */
+
+.pokemonCardContainer {
+  width: 100%;
+  max-width: 1280px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  justify-content: center;
+
+  gap: 24px;
+
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+/* ====================
+   ボタン
+==================== */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  margin: 30px 0 50px;
+}
+
+.btn button {
+  width: 120px;
+
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #333;
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn button:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.btn button:active {
+  transform: translateY(0);
+}
+
+
+/* ====================
+   タブレット
+==================== */
+
+@media (max-width: 1200px) {
+  .pokemonCardContainer {
+    grid-template-columns: repeat(3, 280px);
+  }
+}
+
+
+/* ====================
+   タブレット・小さいPC
+==================== */
+
+@media (max-width: 900px) {
+  .pokemonCardContainer {
+    grid-template-columns: repeat(2, 280px);
+    gap: 20px;
+  }
+}
+
+
+/* ====================
+   スマホ
+==================== */
+
+@media (max-width: 600px) {
+  .pokemonCardContainer {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 25px 15px;
+  }
+
+  .btn {
+    gap: 12px;
+    margin: 25px 0 35px;
+  }
+
+  .btn button {
+    width: 110px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

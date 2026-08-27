@@ -1,0 +1,112 @@
+.card {
+  width: 280px;
+  min-height: 480px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  text-align: center;
+
+  /* 中身を縦方向に整える */
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ポケモン画像 */
+.cardImg {
+  width: 100%;
+  height: 180px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f7f7f7;
+  border-radius: 12px;
+}
+
+.cardImg img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+}
+
+
+/* ポケモンの名前 */
+.cardName {
+  margin: 18px 0 14px;
+
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  color: #333;
+}
+
+
+/* タイプ */
+.cardTypes {
+  margin-bottom: 20px;
+}
+
+.cardTypes > div:first-child {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #777;
+}
+
+.cardTypes > div:not(:first-child) {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+
+/* タイプ名 */
+.typeName {
+  display: inline-block;
+
+  padding: 5px 14px;
+
+  border-radius: 20px;
+
+  background-color: #eee;
+
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+}
+
+
+/* 重さ・高さ・能力 */
+.cardInfo {
+  margin-top: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.cardData {
+  width: 100%;
+}
+
+.cardData .title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+}
