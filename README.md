@@ -1,6 +1,5 @@
-##　ポケモン図鑑
-
-## URL: https://github.com/kentach/React-Pokemon-APP
+## ポケモン図鑑
+### URL: https://github.com/kentach/React-Pokemon-APP
 
 ## 🛠 使用技術
 
