@@ -148,9 +148,6 @@ body {
 
 @media (max-width: 600px) {
   .pokemonCardContainer {
-    width: 100%;
-
-    display: grid;
     grid-template-columns: 1fr;
 
     justify-items: center;
@@ -161,20 +158,13 @@ body {
   }
 
   .btn {
-    gap: 10px;
-
-    margin: 20px 0 30px;
-
-    padding: 0 12px;
+    gap: 12px;
+    margin: 25px 0 35px;
   }
 
   .btn button {
-    width: 100%;
-
-    max-width: 140px;
-
-    padding: 10px 12px;
-
+    width: 110px;
+    padding: 10px 15px;
     font-size: 14px;
   }
 }
